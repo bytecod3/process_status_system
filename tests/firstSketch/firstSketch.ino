@@ -22,8 +22,7 @@ void createWifi(){
       }
 
       Serial.println("Connection successful!");
-      MDNS.begin("demo-server");
-
+      MDNS.begin("process-server");
 }
 
 void setup() {
@@ -31,8 +30,14 @@ void setup() {
   Serial.println("Booted!");
   createWifi();
 
-  MDNS.begin("demo-server");
-
+  if(MDNS.begin("process-server")){
+        Serial.println("MDNS server started");
+//        IPAddress serverIP = MDNS.queryHost();
+//        Serial.println(serverIP);
+    }else{
+      Serial.println("MDNS server not started");
+    }
+ 
   pinMode(LED_BUILTIN, OUTPUT);
 
   // add default headers to our server to allow access to our server
@@ -41,6 +46,7 @@ void setup() {
   DefaultHeaders::Instance().addHeader("Acess-Control-Allow-Headers", "*");
 
   server.addHandler(new AsyncCallbackJsonWebHandler( "/led",  [ ](AsyncWebServerRequest *request, JsonVariant &json){
+    
     // create a json endpoint called led and pull data from that
       const JsonObject &jsonObj = json.as<JsonObject>();
 
@@ -55,7 +61,7 @@ void setup() {
         request->send(200, "OK"); // okay response
     }));
 
-    // serve files using SPIFFS fileSystem with ndex page as entry point
+    // serve files using SPIFFS fileSystem with index page as entry point
     server.serveStatic("/", SPIFFS, "/").setDefaultFile("index.html");
 
     server.onNotFound([ ](AsyncWebServerRequest *request){
@@ -67,11 +73,10 @@ void setup() {
           }
       });
 
-
       server.begin();
     
 }
 
 void loop() {
-
+  
 }
