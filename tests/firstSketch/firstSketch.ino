@@ -1,78 +1,75 @@
-#include <WiFi.h>
+
 #include <ESPAsyncWebServer.h>
+#include <ESPmDNS.h>
 #include <SPIFFS.h>
+#include <AsyncJson.h>
+#include "wifi_credentials.h"
 
-// set LED GPIO
-#define ledPin 15
-
-// store the LED state
-String ledState;
-
-const char* ssid = "Gakibia-Unit3";
-const char* password = "password";
+#define LED_BUILTIN 2
 
 // create async web server object on port 80
 AsyncWebServer server(80);
 
-// Replace placeholder with LED state value
-String processor(const String& var){
-  Serial.println(var);
-  if(var == "STATE"){
-      if(digitalRead(ledPin)){
-        ledState = "ON";
-      }else{
-        ledState = "OFF";
+void createWifi(){
+
+    WiFi.mode(WIFI_STA);
+    WiFi.begin(SSID, PASSWORD);
+
+    while(WiFi.waitForConnectResult() != WL_CONNECTED){
+          Serial.println("Connection Failed! Rebooting...");
+          delay(500);
+          ESP.restart();
       }
 
-      Serial.print(ledState);
-      return ledState;
-  }
-
-  return String();
-}
-
-void connectToWifi(){
-    WiFi.begin(ssid, password);
-
-    while(WiFi.status() != WL_CONNECTED){
-        delay(100);
-        Serial.println("Connecting...");
-    }
-
-    Serial.print("Connected to "); Serial.print(ssid);
-    Serial.println();
-
-    Serial.print("IP address:"); Serial.print(WiFi.localIP());
-    Serial.println();
+      Serial.println("Connection successful!");
+      MDNS.begin("demo-server");
 
 }
 
 void setup() {
-    Serial.begin(115200);
+  Serial.begin(115200);
+  Serial.println("Booted!");
+  createWifi();
 
-    // initialize SPIFFS webserver
-    if(!SPIFFS.begin(true)){
-      Serial.println("Error mounting SPIFFS");
-      return;
-    }
+  MDNS.begin("demo-server");
 
-    // connect to WiFi
-    connectToWifi();
+  pinMode(LED_BUILTIN, OUTPUT);
 
-    // Routes
-    // route for root / web page
-    server.on("/", HTTP_GET, [](AsyncWebServerRequest *request){
-      request->send(SPIFFS, "/index.html", String(), false, processor);
-    });
+  // add default headers to our server to allow access to our server
+  DefaultHeaders::Instance().addHeader("Acess-Control-Allow-Origin", "*");
+  DefaultHeaders::Instance().addHeader("Acess-Control-Allow-Methods", "GET, PUT");
+  DefaultHeaders::Instance().addHeader("Acess-Control-Allow-Headers", "*");
 
-    // route to load style.css file
-    server.on("/style.css", HTTP_GET, [](AsyncWebServerRequest *request){
-      request->send(SPIFFS, "/style.css", "text.css");
-    });
+  server.addHandler(new AsyncCallbackJsonWebHandler( "/led",  [ ](AsyncWebServerRequest *request, JsonVariant &json){
+    // create a json endpoint called led and pull data from that
+      const JsonObject &jsonObj = json.as<JsonObject>();
 
-    // start server
-    server.begin();
+      if(jsonObj["on"]){
+          Serial.println("Turn on LED");
+          digitalWrite(LED_BUILTIN, HIGH);
+        }else{
+          Serial.println("Turn off LED"); 
+          digitalWrite(LED_BUILTIN, LOW); 
+        }
 
+        request->send(200, "OK"); // okay response
+    }));
+
+    // serve files using SPIFFS fileSystem with ndex page as entry point
+    server.serveStatic("/", SPIFFS, "/").setDefaultFile("index.html");
+
+    server.onNotFound([ ](AsyncWebServerRequest *request){
+        if(request->method() == HTTP_OPTIONS){
+            request->send(200);
+          }else{
+            Serial.println("Not found");
+            request->send(404, "Not found");
+          }
+      });
+
+
+      server.begin();
+    
 }
 
 void loop() {

@@ -1,76 +1,31 @@
 <!DOCTYPE html>
 <html>
-	<head>
-
-		<title>Internet controlled LED using ESP32 based web server</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" href="data:,">
-		<link rel="stylesheet" type="text/css" href="style.css">
-
-	 <!-- Verify the current status of LED -->
-	<script type="text/javascript">
-		document.addEventListener("DOMContentLoaded", function(event) {
-		var button_text = "";
-		button_text = document.getElementById("status").innerHTML;
-		if (button_text == "ON") {
-			document.getElementById("switch1").checked = true;
-		}
-		else if (button_text == "OFF") {
-			document.getElementById("switch1").checked = false;
-		}
-	});
-	</script>
-
-	<!-- Change the state of LED    -->
-	<script type="text/javascript">
-		function fun1()
-		{
-		var text = document.getElementById("status").innerHTML;
-		var chbox=document.getElementById("switch1");
-			if (chbox.checked == true && text == "OFF") {
-				window.location.pathname = '/on';
-				chbox.checked = true;
-			}
-			else
-			{
-				window.location.pathname = '/off';
-				chbox.checked = false;
-			}
-		}
-	</script>
+<head>
+	<title>Process System</title>
 </head>
 
-<body >
-    <h1>Process Control system <div id="status" style = "display: none;">%STATE%</div></h1>
-        <span class="switch">
-            <span class="switch-border1">
-                <span class="switch-border2">
-                    <input id="switch1" type="checkbox" onclick="fun1()"/>
-                    <label for="switch1"></label>
-                    <span class="switch-top"></span>
-                    <span class="switch-shadow"></span>
-                    <span class="switch-handle"></span>
-                    <span class="switch-handle-left"></span>
-                    <span class="switch-handle-right"></span>
-                    <span class="switch-handle-top"></span>
-                    <span class="switch-handle-bottom"></span>
-                    <span class="switch-handle-base"></span>
-                    <span class="switch-led switch-led-green">
-                        <span class="switch-led-border">
-                            <span class="switch-led-light">
-                                <span class="switch-led-glow"></span>
-                            </span>
-                        </span>
-                    </span>
-                    <span class="switch-led switch-led-red">
-                        <span class="switch-led-border">
-                            <span class="switch-led-light">
-                                <span class="switch-led-glow"></span>
-                            </span>
-                        </span>
-                    </span>
-                </span>
-            </span>
-        </span>
+
+<body>
+
+	<script type="text/javascript">
+		let led = false;
+		async function toggleLed(){
+			led = !led;
+
+			const repsonse = await fetch("https://demo-server.local/led", {
+				method: "PUT",
+				body: JSON.stringify({on: led}),
+				headers: {
+					"Content-Type": "application/json",
+				},
+			});
+		}
+	</script>
+
+	<div>	
+		<button onclick="toggleLed()">	Toggle LED</button>
+
+	</div>
+
 </body>
 </html>
