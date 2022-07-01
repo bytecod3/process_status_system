@@ -1,0 +1,78 @@
+
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 1rem;
+    color: white;
+}
+h2{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #143642;
+}
+.topnav {
+    overflow: hidden;
+    background-color: black;
+}
+body {
+    margin: 0;
+}
+.content {
+    padding: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.card {
+    background-color: #F8F7F9;;
+    box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5);
+    padding-top:10px;
+    padding-bottom:20px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.servo-set{
+    border:none;
+    color: white;
+    background-color: black;
+}
+
+#servo{
+    padding: 5px;
+    font-weight: bold;
+}
+
+.on{
+    background-color: green;
+
+}
+
+.off{
+    background-color: red;
+}
+
+.state {
+    font-size: 1rem;
+    color:#8c8c8c;
+    font-weight: bold;
+}
+
