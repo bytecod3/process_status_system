@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\USER\Desktop\Folders\4th Year Classwork\labs\IC\ESP8266_Lab1IC\process_status_system\ESP8266_Version\ESP8266_Version.kicad_sch</source>
+    <date>7/15/2022 3:58:20 PM</date>
+    <tool>Eeschema (6.0.1)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Process Status System For IC class</title>
+        <company>JKUAT ECE 4.1/2022</company>
+        <rev>1</rev>
+        <date>2022-06-01</date>
+        <source>ESP8266_Version.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>C</value>
+      <footprint>Capacitor_THT:CP_Radial_D4.0mm_P1.50mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESP8266_Version.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>92b4c6e4-d408-4663-9c41-f19c648a4d44</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>C</value>
+      <footprint>Capacitor_THT:CP_Radial_D4.0mm_P1.50mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESP8266_Version.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8e8e9b67-fbab-49f6-a241-642514fcb4ac</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>LED_THT:LED_D5.0mm</footprint>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESP8266_Version.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d01ae736-64c8-47b9-817e-57be4d72b8c3</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>LED</value>
+      <footprint>LED_THT:LED_D5.0mm</footprint>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESP8266_Version.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>68b8a8c9-1363-4d42-a064-cf24aa717ce3</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>LED</value>
+      <footprint>LED_THT:LED_D5.0mm</footprint>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESP8266_Version.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>52b78132-1873-470f-840e-d34e1bc4801a</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>LED</value>
+      <footprint>LED_THT:LED_D5.0mm</footprint>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESP8266_Version.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cc74babf-b207-456a-a5fd-868d25b944e3</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>Barrel_Jack</value>
+      <footprint>Connector_BarrelJack:BarrelJack_GCT_DCJ200-10-A_Horizontal</footprint>
+      <libsource lib="Connector" part="Barrel_Jack" description="DC Barrel Jack"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESP8266_Version.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8ca3e20d-bcc7-4c5e-9deb-562dfed9fecb</tstamps>
+    </comp>
+    <comp ref="M1">
+      <value>Motor_Servo</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <datasheet>http://forums.parallax.com/uploads/attachments/46831/74481.png</datasheet>
+      <libsource lib="Motor" part="Motor_Servo" description="Servo Motor (Futaba, HiTec, JR connector)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESP8266_Version.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>39301ce5-d235-4a3f-9b70-c9e4aac21159</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>220</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESP8266_Version.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>46fda039-9d4d-42b5-bbba-386fc475e9b1</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>220</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESP8266_Version.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e76cc800-0d1c-4376-8ec2-4c7cbf02c5ce</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>220</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESP8266_Version.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a32bcc98-42d9-4e2b-9926-c3e13de3ada0</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>220</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESP8266_Version.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dff22045-fe9b-42b9-8e15-d49118ff34cb</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>LDR03</value>
+      <footprint>OptoDevice:R_LDR_10x8.5mm_P7.6mm_Vertical</footprint>
+      <datasheet>http://www.elektronica-componenten.nl/WebRoot/StoreNL/Shops/61422969/54F1/BA0C/C664/31B9/2173/C0A8/2AB9/2AEF/LDR03IMP.pdf</datasheet>
+      <libsource lib="Sensor_Optical" part="LDR03" description="light dependent resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESP8266_Version.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d821e42c-57f4-4376-82cf-b889d038d160</tstamps>
+    </comp>
+    <comp ref="RV1">
+      <value>10K</value>
+      <footprint>Potentiometer_THT:Potentiometer_Piher_PT-10-V05_Vertical</footprint>
+      <libsource lib="Device" part="R_Potentiometer_Trim_US" description="Trim-potentiometer, US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESP8266_Version.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>427d6262-1078-4818-818a-1802e65e8f3f</tstamps>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_SPST</value>
+      <footprint>custom-footprints:piano-slide-switchx3</footprint>
+      <libsource lib="Switch" part="SW_SPST" description="Single Pole Single Throw (SPST) switch"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESP8266_Version.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bd6cc9d4-8537-44b4-8515-3fe4a6e05f2c</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>LM7805_TO220</value>
+      <footprint>Package_TO_SOT_THT:TO-220-3_Vertical</footprint>
+      <datasheet>https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF</datasheet>
+      <libsource lib="Regulator_Linear" part="LM7805_TO220" description="Positive 1A 35V Linear Regulator, Fixed Output 5V, TO-220"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESP8266_Version.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>656d53ce-f566-445c-b0e6-a23f4f7c85c3</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>ESP8266-Generic</value>
+      <libsource lib="DEV_BOARDS" part="ESP8266-Generic" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESP8266_Version.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a98e92b2-b271-449d-9990-9041c5fa0a23</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Barrel_Jack">
+      <description>DC Barrel Jack</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>BarrelJack*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Barrel_Jack</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="DEV_BOARDS" part="ESP8266-Generic">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ESP8266-Generic</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A0" type="input"/>
+        <pin num="2" name="GND" type="input"/>
+        <pin num="3" name="VV" type="input"/>
+        <pin num="4" name="S3" type="input"/>
+        <pin num="5" name="S2" type="input"/>
+        <pin num="6" name="S1" type="input"/>
+        <pin num="7" name="SC" type="input"/>
+        <pin num="8" name="SO" type="input"/>
+        <pin num="9" name="SK" type="input"/>
+        <pin num="10" name="GND" type="input"/>
+        <pin num="11" name="3V3" type="input"/>
+        <pin num="12" name="EN" type="input"/>
+        <pin num="13" name="RST" type="input"/>
+        <pin num="14" name="GND" type="input"/>
+        <pin num="15" name="Vin" type="input"/>
+        <pin num="16" name="3V3" type="input"/>
+        <pin num="17" name="GND" type="input"/>
+        <pin num="18" name="TX" type="input"/>
+        <pin num="19" name="RX" type="input"/>
+        <pin num="20" name="D8" type="input"/>
+        <pin num="21" name="D7" type="input"/>
+        <pin num="22" name="D6" type="input"/>
+        <pin num="23" name="D5" type="input"/>
+        <pin num="24" name="GND" type="input"/>
+        <pin num="25" name="3V3" type="input"/>
+        <pin num="26" name="D4" type="input"/>
+        <pin num="27" name="D3" type="input"/>
+        <pin num="28" name="D2" type="input"/>
+        <pin num="29" name="D1" type="input"/>
+        <pin num="30" name="D0" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Potentiometer_Trim_US">
+      <description>Trim-potentiometer, US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Potentiometer*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">RV</field>
+        <field name="Value">R_Potentiometer_Trim_US</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_US">
+      <description>Resistor, US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_US</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Motor" part="Motor_Servo">
+      <description>Servo Motor (Futaba, HiTec, JR connector)</description>
+      <docs>http://forums.parallax.com/uploads/attachments/46831/74481.png</docs>
+      <footprints>
+        <fp>PinHeader*P2.54mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">M</field>
+        <field name="Value">Motor_Servo</field>
+        <field name="Datasheet">http://forums.parallax.com/uploads/attachments/46831/74481.png</field>
+      </fields>
+      <pins>
+        <pin num="1" name="PWM" type="passive"/>
+        <pin num="2" name="+" type="passive"/>
+        <pin num="3" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="LM7805_TO220">
+      <description>Positive 1A 35V Linear Regulator, Fixed Output 5V, TO-220</description>
+      <docs>https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF</docs>
+      <footprints>
+        <fp>TO?220*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM7805_TO220</field>
+        <field name="Footprint">Package_TO_SOT_THT:TO-220-3_Vertical</field>
+        <field name="Datasheet">https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VI" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="VO" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="Sensor_Optical" part="LDR03">
+      <description>light dependent resistor</description>
+      <docs>http://www.elektronica-componenten.nl/WebRoot/StoreNL/Shops/61422969/54F1/BA0C/C664/31B9/2173/C0A8/2AB9/2AEF/LDR03IMP.pdf</docs>
+      <footprints>
+        <fp>R*LDR*10x8.5mm*P7.6mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">LDR03</field>
+        <field name="Footprint">OptoDevice:R_LDR_10x8.5mm_P7.6mm_Vertical</field>
+        <field name="Datasheet">http://www.elektronica-componenten.nl/WebRoot/StoreNL/Shops/61422969/54F1/BA0C/C664/31B9/2173/C0A8/2AB9/2AEF/LDR03IMP.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_SPST">
+      <description>Single Pole Single Throw (SPST) switch</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_SPST</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Connector.kicad_sym</uri>
+    </library>
+    <library logical="DEV_BOARDS">
+      <uri>C:/Users/USER/Documents/KiCad/6.0/symbols/DEV_BOARDS.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="Motor">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Motor.kicad_sym</uri>
+    </library>
+    <library logical="Regulator_Linear">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Regulator_Linear.kicad_sym</uri>
+    </library>
+    <library logical="Sensor_Optical">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Sensor_Optical.kicad_sym</uri>
+    </library>
+    <library logical="Switch">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Switch.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="5V">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="M1" pin="2" pinfunction="+" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="VO" pintype="power_out"/>
+      <node ref="U2" pin="15" pinfunction="Vin" pintype="input"/>
+    </net>
+    <net code="2" name="GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="J1" pin="2" pintype="passive"/>
+      <node ref="M1" pin="3" pinfunction="-" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="RV1" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="24" pinfunction="GND" pintype="input"/>
+    </net>
+    <net code="3" name="LDR1">
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="RV1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U2" pin="22" pinfunction="D6" pintype="input"/>
+    </net>
+    <net code="4" name="Net-(C1-Pad1)">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="SW1" pin="2" pinfunction="B" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="VI" pintype="power_in"/>
+    </net>
+    <net code="5" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+    </net>
+    <net code="6" name="Net-(D2-Pad1)">
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+    </net>
+    <net code="7" name="Net-(D3-Pad1)">
+      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+    </net>
+    <net code="8" name="Net-(D4-Pad1)">
+      <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+    </net>
+    <net code="9" name="Net-(J1-Pad1)">
+      <node ref="J1" pin="1" pintype="passive"/>
+      <node ref="SW1" pin="1" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="10" name="Net-(R7-Pad2)">
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="RV1" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="11" name="P1_LED">
+      <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="U2" pin="26" pinfunction="D4" pintype="input"/>
+    </net>
+    <net code="12" name="P2_LED">
+      <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="U2" pin="27" pinfunction="D3" pintype="input"/>
+    </net>
+    <net code="13" name="P3_LED">
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="U2" pin="28" pinfunction="D2" pintype="input"/>
+    </net>
+    <net code="14" name="P4_LED">
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="U2" pin="29" pinfunction="D1" pintype="input"/>
+    </net>
+    <net code="15" name="SERVO_SIGNAL">
+      <node ref="M1" pin="1" pinfunction="PWM" pintype="passive"/>
+      <node ref="U2" pin="30" pinfunction="D0" pintype="input"/>
+    </net>
+    <net code="16" name="TEMP_SIG">
+      <node ref="U2" pin="23" pinfunction="D5" pintype="input"/>
+    </net>
+    <net code="17" name="unconnected-(U2-Pad1)">
+      <node ref="U2" pin="1" pinfunction="A0" pintype="input+no_connect"/>
+    </net>
+    <net code="18" name="unconnected-(U2-Pad2)">
+      <node ref="U2" pin="2" pinfunction="GND" pintype="input+no_connect"/>
+    </net>
+    <net code="19" name="unconnected-(U2-Pad3)">
+      <node ref="U2" pin="3" pinfunction="VV" pintype="input+no_connect"/>
+    </net>
+    <net code="20" name="unconnected-(U2-Pad4)">
+      <node ref="U2" pin="4" pinfunction="S3" pintype="input+no_connect"/>
+    </net>
+    <net code="21" name="unconnected-(U2-Pad5)">
+      <node ref="U2" pin="5" pinfunction="S2" pintype="input+no_connect"/>
+    </net>
+    <net code="22" name="unconnected-(U2-Pad6)">
+      <node ref="U2" pin="6" pinfunction="S1" pintype="input+no_connect"/>
+    </net>
+    <net code="23" name="unconnected-(U2-Pad7)">
+      <node ref="U2" pin="7" pinfunction="SC" pintype="input+no_connect"/>
+    </net>
+    <net code="24" name="unconnected-(U2-Pad8)">
+      <node ref="U2" pin="8" pinfunction="SO" pintype="input+no_connect"/>
+    </net>
+    <net code="25" name="unconnected-(U2-Pad9)">
+      <node ref="U2" pin="9" pinfunction="SK" pintype="input+no_connect"/>
+    </net>
+    <net code="26" name="unconnected-(U2-Pad10)">
+      <node ref="U2" pin="10" pinfunction="GND" pintype="input+no_connect"/>
+    </net>
+    <net code="27" name="unconnected-(U2-Pad11)">
+      <node ref="U2" pin="11" pinfunction="3V3" pintype="input+no_connect"/>
+    </net>
+    <net code="28" name="unconnected-(U2-Pad12)">
+      <node ref="U2" pin="12" pinfunction="EN" pintype="input+no_connect"/>
+    </net>
+    <net code="29" name="unconnected-(U2-Pad13)">
+      <node ref="U2" pin="13" pinfunction="RST" pintype="input+no_connect"/>
+    </net>
+    <net code="30" name="unconnected-(U2-Pad14)">
+      <node ref="U2" pin="14" pinfunction="GND" pintype="input+no_connect"/>
+    </net>
+    <net code="31" name="unconnected-(U2-Pad16)">
+      <node ref="U2" pin="16" pinfunction="3V3" pintype="input+no_connect"/>
+    </net>
+    <net code="32" name="unconnected-(U2-Pad17)">
+      <node ref="U2" pin="17" pinfunction="GND" pintype="input+no_connect"/>
+    </net>
+    <net code="33" name="unconnected-(U2-Pad18)">
+      <node ref="U2" pin="18" pinfunction="TX" pintype="input+no_connect"/>
+    </net>
+    <net code="34" name="unconnected-(U2-Pad19)">
+      <node ref="U2" pin="19" pinfunction="RX" pintype="input+no_connect"/>
+    </net>
+    <net code="35" name="unconnected-(U2-Pad20)">
+      <node ref="U2" pin="20" pinfunction="D8" pintype="input+no_connect"/>
+    </net>
+    <net code="36" name="unconnected-(U2-Pad21)">
+      <node ref="U2" pin="21" pinfunction="D7" pintype="input+no_connect"/>
+    </net>
+    <net code="37" name="unconnected-(U2-Pad25)">
+      <node ref="U2" pin="25" pinfunction="3V3" pintype="input+no_connect"/>
+    </net>
+  </nets>
+</export>

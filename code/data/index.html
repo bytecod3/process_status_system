@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Process Monitor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+
+        <div class="topnav" style="position: relative">
+            <h1 style="position: sticky; top: 0">Process Status Monitor</h1>
+        </div>
+
+        <div class="content">
+
+            <div class="process-leds">
+                <h4>Process LEDs</h4>
+                <div class="card">
+                    <h2 style="font-weight: medium">Process 1</h2>
+                    <p class="state">State: <span class="state" id="led1state"></span></p>
+
+                    <p>
+                        <button id="led1on" class="on button" onclick="led1on(this)">ON  </button>
+                        <button id="led1off" class="off button" onclick="led1off(this)">OFF</button>
+                    </p>
+
+                </div>
+
+                <div class="card">
+                    <h2 style="font-weight: medium">Process 2</h2>
+                    <p class="state">State: <span class="state" id="led2state"></span></p>
+
+                    <p>
+                        <button id="led2on" class="on button" onclick="led2on(this)" >ON</button>
+                        <button id="led2off" class="off button" onclick="led2off(this)" >OFF</button>
+                    </p>
+
+                </div>
+                
+                 <div class="card">
+                    <h2 style="font-weight: medium">Process 3</h2>
+                    <p class="state">State: <span class="state" id="led3state"></span></p>
+
+                    <p>
+                        <button id="led3on" class="on button" onclick="led3on(this)" >ON</button>
+                        <button id="led3off" class="off button" onclick="led3off(this)" >OFF</button>
+                    </p>
+
+                </div>
+                
+                 <div class="card">
+                    <h2 style="font-weight: medium">Process 4</h2>
+                    <p class="state">State: <span class="state" id="led4state"></span></p>
+
+                    <p>
+                        <button id="led4on" class="on button" onclick="led4on(this)" >ON</button>
+                        <button id="led4off" class="off button" onclick="led4off(this)" >OFF</button>
+                    </p>
+
+                </div>
+            
+            </div>
+            
+            <div class="light">
+            
+                <div class="card">
+                    <h2 style="font-weight: medium">Light Intensity</h2>
+                    <p class="state"><span class="state" id="ambient-light"></span> Cd</p>
+                </div>            
+            
+            </div>
+            
+            <div class="servo-control">
+                <div class="card">
+                    <h4 style="font-weight: medium">Servo Motor Control</h4>
+
+                    <p class="state">Current Position: <span class="state" id="servo-angle"></span> &#176; </p>
+
+                    <p>
+                        <label for="servo">Enter  angle to set:</label>
+                        <input type="number" name="serv-deg" id="servo" min="0" max="180" step="1">
+
+                        <button class="servo-set servo" id="setservoangle" onclick="updateServoAngle(this)">Set</button>
+                    </p>
+
+                </div>
+
+
+        <script src="main.js"></script>
+</body>
+</html>
